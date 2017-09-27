@@ -305,7 +305,7 @@ var NewsfeedPage = (function () {
 NewsfeedPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-newsfeed',template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/'<!--\n  Generated template for the NewsfeedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>newsfeed</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/,
+        selector: 'page-newsfeed',template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/'<!--\n  Generated template for the NewsfeedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>newsfeed</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<button ion-button>Button</button>\n<ion-content padding>\n\n</ion-content>\n<ion-list>\n  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">\n    {{ item }}\n  </button>  \n</ion-list>\n\n'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], NewsfeedPage);
@@ -416,7 +416,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = 'LoginPage';
+        this.rootPage = 'NewsfeedPage';
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -429,9 +429,10 @@ var MyApp = (function () {
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
 ], MyApp);
 
+var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
