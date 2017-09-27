@@ -10,6 +10,7 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AngularFireModule} from 'angularfire2';
 import { MyApp } from './app.component';
 import { AuthProvider } from '../providers/auth/auth';
+import {NewsfeedPageModule} from './../pages/newsfeed/newsfeed.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { AuthProvider } from '../providers/auth/auth';
     IonicModule.forRoot(MyApp),
     AngularFireAuthModule,
     LoginPageModule,
-    AngularFireModule.initializeApp(crank)
+    AngularFireModule.initializeApp(crank),
+    NewsfeedPageModule,
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
