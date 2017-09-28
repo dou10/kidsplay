@@ -15,7 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsfeedPage {
 
+  public people = new Array();
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.people.push({name:"Smith " + "Family", id:1});
+    // this.people.push({name:"Waller " + "Family", id:2});
+    // this.people.push({name:"3", id:3});
   }
 
   ionViewDidLoad() {

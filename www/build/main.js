@@ -296,6 +296,10 @@ var NewsfeedPage = (function () {
     function NewsfeedPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.people = new Array();
+        this.people.push({ name: "Smith " + "Family", id: 1 });
+        // this.people.push({name:"Waller " + "Family", id:2});
+        // this.people.push({name:"3", id:3});
     }
     NewsfeedPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad NewsfeedPage');
@@ -303,9 +307,9 @@ var NewsfeedPage = (function () {
     return NewsfeedPage;
 }());
 NewsfeedPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])({}),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-newsfeed',template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/'<!--\n  Generated template for the NewsfeedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>newsfeed</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<button ion-button>Button</button>\n<ion-content padding>\n\n</ion-content>\n<ion-list>\n  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">\n    {{ item }}\n  </button>  \n</ion-list>\n\n'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/,
+        selector: 'page-newsfeed',template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/'<!--\n  Generated template for the NewsfeedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar >\n    <ion-title >News Feed</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content padding class = "item item-avatar">\n    <img src = "my-image.png">\n    <h2>Card Name</h2>\n</ion-content>\n\n<ion-content padding>\n  \n  <ion-card>\n        <ion-card-header *ngFor="let person of people">\n          {{person.name}}\n        </ion-card-header>\n        <ion-card-content>\n          <p>Come join us in celebrating Mathew\'s 6th Birthday!!!</p>\n        </ion-card-content>\n      </ion-card>\n      \n      <ion-card>\n          <ion-card-header>\n            Waller Family\n          </ion-card-header>\n          <ion-card-content>\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget \n                pharetra tortor. Proin quis eros imperdiet, facilisis nisi in, tincidunt orci. \n                Nam tristique elit massa, quis faucibus augue finibus ac</p>\n          </ion-card-content>\n        </ion-card>\n        \n</ion-content>  \n\n<!-- <ion-content padding> -->'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/pages/newsfeed/newsfeed.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], NewsfeedPage);
@@ -429,10 +433,9 @@ var MyApp = (function () {
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/moiseszurita/Documents/GitHub/kidsplay/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
-var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
