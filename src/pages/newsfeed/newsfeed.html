@@ -11,13 +11,8 @@
 </ion-navbar>
 </ion-header>
 
-<ion-content padding class = "item item-avatar">
-    <img src = "my-image.png">
-    <h2>Card Name</h2>
-</ion-content>
 
-<ion-content padding>
-  
+<ion-content class="background">  
   <ion-card>
         <ion-card-header *ngFor="let person of people">
           {{person.name}}
@@ -36,7 +31,7 @@
                 pharetra tortor. Proin quis eros imperdiet, facilisis nisi in, tincidunt orci. 
                 Nam tristique elit massa, quis faucibus augue finibus ac</p>
           </ion-card-content>
-        </ion-card>
+      </ion-card>
         
 </ion-content>  
 
