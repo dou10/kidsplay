@@ -1,12 +1,26 @@
 page-newsfeed {
 
     .background {
-        background-image: url('../../assets/kids.jpg');
+        background-image: url('../../assets/newsFeedAssets/Background_image/flyingchild.jpg');
         background-repeat: no-repeat;
         position: contain;
         background-position: center;
         background-size: cover;
         background-position: 70% 10%;         
     }
+
+    .item-avatar  {     
+        width:90% !important;  
+        height : 90% !important;  
+        max-width: 50px !important;  //any size
+        max-height: 50px !important; //any size
+        }
+
+     .custom-icon {
+        font-size: 64px;
+        color : red;
+    }
+
+        
 
 }

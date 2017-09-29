@@ -12,15 +12,16 @@
 </ion-header>
 
 
-<ion-content class="background">  
-  <ion-card>
+<ion-content class="background"> 
+   
+  <!-- <ion-card>
         <ion-card-header *ngFor="let person of people">
           {{person.name}}
         </ion-card-header>
         <ion-card-content>
           <p>Come join us in celebrating Mathew's 6th Birthday!!!</p>
         </ion-card-content>
-      </ion-card>
+      </ion-card> -->
       
       <ion-card>
           <div class = "item item-avatar">
@@ -30,28 +31,37 @@
           Waller Family
         </ion-card-header>
         <ion-card-content>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget 
-                pharetra tortor. Proin quis eros imperdiet, facilisis nisi in, tincidunt orci. 
-                Nam tristique elit massa, quis faucibus augue finibus ac
+          <p>Annual neighbor meeting. Let’s get together to discuss 
+              important issues in our beloved neighborhood and 
+              teach our children what to do in a situation if confronted 
+              by a stranger. Light beverages and snacks will be provided.
           </p>
         </ion-card-content>
+      </ion-card> 
+      
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+              <img src = '../../assets/newsFeedAssets/familypics/familypic_2.jpg'>
+              <h2>Jones Family</h2>
+              <p>October 31, 2017</p>
+              <p>Come join us in celebrating Mathew's 6th Birthday!!!</p>
+          </ion-avatar>
+          <ion-row>
+            <ion-col>
+              </ion-col>
+              <button ion-button clear small>
+                  <ion-icon name="calendar"></ion-icon>
+                  <!-- <ion-icon name="calendar" isActive="false" i class="ion-claendar"></ion-icon> -->
+                </button>
+          </ion-row>
+        </ion-item>
+        <!-- <ion-card-content>
+            
+        </ion-card-content> -->
       </ion-card>
 
-      <ion-card class= "item time-avatar">
-          <img src = '../../assets/newsFeedAssets/familypics/familypic_2.jpg'>
-          <h2>Card Name</h2>
-          <!-- <div class = "item item-avatar">
-              <img src = '../../assets/newsFeedAssets/familypics/familypic_2.jpg'>
-             <h2>Card Name</h2>
-          </div> -->
-       
-          <!-- <div class = "item item-body">
-             <img class = "full-image" src = "my-image.png">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget 
-             pharetra tortor. Proin quis eros imperdiet, facilisis nisi in, tincidunt orci. 
-             Nam tristique elit massa, quis faucibus augue finibus ac.
-          </div> -->
-      </ion-card>
+         
         
 </ion-content>  
 
