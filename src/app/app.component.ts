@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 import { EventsAttendingPage } from '../pages/events-attending/events-attending';
 import { MessagingPage } from '../pages/messaging/messaging';
+import { FriendsPage } from '../pages/friends/friends';
 import { MyEventsPage } from '../pages/my-events/my-events';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 
@@ -27,12 +28,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Newsfeed', component: NewsfeedPage },
-      { title: 'Events Attending', component: EventsAttendingPage },
-      { title: 'Messaging', component: MessagingPage },
-      { title: 'My Events', component: MyEventsPage },
-      { title: 'My Profile', component: MyProfilePage }
+      { title: 'Home', component: HomePage, icon: 'home' },
+      { title: 'Newsfeed', component: NewsfeedPage, icon: 'paper' },
+      { title: 'Events Attending', component: EventsAttendingPage, icon: 'bookmarks' },
+      { title: 'Messaging', component: MessagingPage, icon: 'chatbubbles' },
+      { title: 'Friends', component: FriendsPage, icon: 'contacts' },
+      { title: 'My Events', component: MyEventsPage, icon: 'calendar' },
+      { title: 'My Profile', component: MyProfilePage, icon: 'contact' }
     ];
 
   }

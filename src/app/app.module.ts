@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 import { EventsAttendingPage } from '../pages/events-attending/events-attending';
 import { MessagingPage } from '../pages/messaging/messaging';
+import { FriendsPage } from '../pages/friends/friends';
 import { MyEventsPage } from '../pages/my-events/my-events';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 
@@ -22,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NewsfeedPage,
     EventsAttendingPage,
     MessagingPage,
+    FriendsPage,
     MyEventsPage,
     MyProfilePage
   ],
@@ -37,6 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NewsfeedPage,
     EventsAttendingPage,
     MessagingPage,
+    FriendsPage,
     MyEventsPage,
     MyProfilePage
   ],
