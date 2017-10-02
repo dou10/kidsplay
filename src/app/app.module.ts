@@ -12,6 +12,8 @@ import { FriendsPage } from '../pages/friends/friends';
 import { MyEventsPage } from '../pages/my-events/my-events';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 
+import { AddEventPage } from '../pages/add-event/add-event';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MessagingPage,
     FriendsPage,
     MyEventsPage,
-    MyProfilePage
+    MyProfilePage,
+    AddEventPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MessagingPage,
     FriendsPage,
     MyEventsPage,
-    MyProfilePage
+    MyProfilePage,
+    AddEventPage
   ],
   providers: [
     StatusBar,

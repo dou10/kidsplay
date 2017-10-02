@@ -97,6 +97,7 @@ MessagingPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_event_add_event__ = __webpack_require__(276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -106,6 +107,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 /**
@@ -122,15 +124,19 @@ var MyEventsPage = (function () {
     MyEventsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad MyEventsPage');
     };
+    MyEventsPage.prototype.openAddEventPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__add_event_add_event__["a" /* AddEventPage */]);
+    };
     return MyEventsPage;
 }());
 MyEventsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-my-events',template:/*ion-inline-start:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\my-events\my-events.html"*/'<!--\n  Generated template for the MyEventsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>My Events</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear>\n        <ion-icon name="search" large></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="cards-bg social-cards">\n\n  <ion-card>\n    <button ion-button color="secondary" icon-start block class="addButton">\n      <ion-icon name=\'add\'></ion-icon>\n      Create New Event\n    </button>\n  </ion-card>\n\n  <ion-card>\n\n    <div style="position: relative">\n      <img src="../assets/images/event/magicshow.jpg">\n      <ion-fab right top>\n        <button ion-fab>\n        <ion-icon name="pin"></ion-icon>\n      </button>\n      </ion-fab>\n    </div>\n\n    <ion-card-content class="no-bottom-padding">\n      <h1>Magic Bonanza</h1>\n    </ion-card-content>\n\n    <ion-item>\n      <ion-icon name="color-wand" item-start large></ion-icon>\n      <h2>The Magic Castle</h2>\n      <p>7001 Franklin Ave, Hollywood, CA 90028</p>\n    </ion-item>\n\n    <ion-card-content class="no-bottom-padding">\n      <p>Come one, come all! Attend the greatest magic show every known to man!</p>\n    </ion-card-content>\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../assets/images/profile/weigley.png">\n      </ion-avatar>\n      <h2>Hosted by: Jeff Weigley</h2>\n      <p>Event Date: October 20, 2017</p>\n    </ion-item>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="bookmark"></ion-icon>\n          <div>69 Attending</div>\n        </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="text"></ion-icon>\n          <div>32 Comments</div>\n        </button>\n      </ion-col>\n      <ion-col center text-center>\n        <ion-note>\n          42h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n</ion-content>\n\n<style>\n  .social-cards ion-col {\n    padding: 0;\n  }\n  .no-bottom-padding {\n    padding-bottom: 0;\n  }\n  .addButton {\n    margin: 0 auto;\n  }\n</style>\n\n'/*ion-inline-end:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\my-events\my-events.html"*/,
+        selector: 'page-my-events',template:/*ion-inline-start:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\my-events\my-events.html"*/'<!--\n  Generated template for the MyEventsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>My Events</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear>\n        <ion-icon name="search" large></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="cards-bg social-cards">\n\n  <ion-card>\n    <button ion-button color="secondary" icon-start block class="addButton" (click)="openAddEventPage()">\n      <ion-icon name=\'add\'></ion-icon>\n      Create New Event\n    </button>\n  </ion-card>\n\n  <ion-card>\n\n    <div style="position: relative">\n      <img src="../assets/images/event/magicshow.jpg">\n      <ion-fab right top>\n        <button ion-fab>\n        <ion-icon name="pin"></ion-icon>\n      </button>\n      </ion-fab>\n    </div>\n\n    <ion-card-content class="no-bottom-padding">\n      <h1>Magic Bonanza</h1>\n    </ion-card-content>\n\n    <ion-item>\n      <ion-icon name="color-wand" item-start large></ion-icon>\n      <h2>The Magic Castle</h2>\n      <p>7001 Franklin Ave, Hollywood, CA 90028</p>\n    </ion-item>\n\n    <ion-card-content class="no-bottom-padding">\n      <p>Come one, come all! Attend the greatest magic show every known to man!</p>\n    </ion-card-content>\n\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../assets/images/profile/weigley.png">\n      </ion-avatar>\n      <h2>Hosted by: Jeff Weigley</h2>\n      <p>Event Date: October 20, 2017</p>\n    </ion-item>\n\n    <ion-row>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="bookmark"></ion-icon>\n          <div>69 Attending</div>\n        </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="text"></ion-icon>\n          <div>32 Comments</div>\n        </button>\n      </ion-col>\n      <ion-col center text-center>\n        <ion-note>\n          42h ago\n        </ion-note>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n</ion-content>\n\n<style>\n  .social-cards ion-col {\n    padding: 0;\n  }\n  .no-bottom-padding {\n    padding-bottom: 0;\n  }\n  .addButton {\n    margin: 0 auto;\n  }\n</style>\n\n'/*ion-inline-end:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\my-events\my-events.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
 ], MyEventsPage);
 
+var _a, _b;
 //# sourceMappingURL=my-events.js.map
 
 /***/ }),
@@ -246,29 +252,33 @@ webpackEmptyAsyncContext.id = 113;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/add-event/add-event.module": [
+		275,
+		8
+	],
 	"../pages/events-attending/events-attending.module": [
 		269,
-		5
+		14
 	],
 	"../pages/friends/friends.module": [
 		270,
-		4
+		13
 	],
 	"../pages/messaging/messaging.module": [
 		271,
-		3
+		12
 	],
 	"../pages/my-events/my-events.module": [
 		272,
-		2
+		11
 	],
 	"../pages/my-profile/my-profile.module": [
 		273,
-		1
+		10
 	],
 	"../pages/newsfeed/newsfeed.module": [
 		274,
-		0
+		9
 	]
 };
 function webpackAsyncContext(req) {
@@ -353,14 +363,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_friends_friends__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_my_events_my_events__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_my_profile_my_profile__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_add_event_add_event__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -391,7 +403,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__pages_messaging_messaging__["a" /* MessagingPage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_friends_friends__["a" /* FriendsPage */],
             __WEBPACK_IMPORTED_MODULE_10__pages_my_events_my_events__["a" /* MyEventsPage */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_my_profile_my_profile__["a" /* MyProfilePage */]
+            __WEBPACK_IMPORTED_MODULE_11__pages_my_profile_my_profile__["a" /* MyProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_add_event_add_event__["a" /* AddEventPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -402,7 +415,8 @@ AppModule = __decorate([
                     { loadChildren: '../pages/messaging/messaging.module#MessagingPageModule', name: 'MessagingPage', segment: 'messaging', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/my-events/my-events.module#MyEventsPageModule', name: 'MyEventsPage', segment: 'my-events', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/my-profile/my-profile.module#MyProfilePageModule', name: 'MyProfilePage', segment: 'my-profile', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/newsfeed/newsfeed.module#NewsfeedPageModule', name: 'NewsfeedPage', segment: 'newsfeed', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/newsfeed/newsfeed.module#NewsfeedPageModule', name: 'NewsfeedPage', segment: 'newsfeed', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/add-event/add-event.module#AddEventPageModule', name: 'AddEventPage', segment: 'add-event', priority: 'low', defaultHistory: [] }
                 ]
             }),
         ],
@@ -416,11 +430,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__pages_messaging_messaging__["a" /* MessagingPage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_friends_friends__["a" /* FriendsPage */],
             __WEBPACK_IMPORTED_MODULE_10__pages_my_events_my_events__["a" /* MyEventsPage */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_my_profile_my_profile__["a" /* MyProfilePage */]
+            __WEBPACK_IMPORTED_MODULE_11__pages_my_profile_my_profile__["a" /* MyProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_add_event_add_event__["a" /* AddEventPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
         ]
     })
@@ -502,15 +517,14 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon item-left [name]="p.icon"></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -568,6 +582,57 @@ ListPage = ListPage_1 = __decorate([
 
 var ListPage_1;
 //# sourceMappingURL=list.js.map
+
+/***/ }),
+
+/***/ 276:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddEventPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_events_my_events__ = __webpack_require__(102);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the AddEventPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AddEventPage = (function () {
+    function AddEventPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AddEventPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AddEventPage');
+    };
+    AddEventPage.prototype.openMyEventsPage = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__my_events_my_events__["a" /* MyEventsPage */], {}, { animate: true, direction: 'forward' });
+    };
+    return AddEventPage;
+}());
+AddEventPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-add-event',template:/*ion-inline-start:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\add-event\add-event.html"*/'<!--\n  Generated template for the AddEventPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Create An Event</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n\n    <ion-item>\n      <ion-label floating>Title</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>Location</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>Information</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n\n    <ion-item>\n      <ion-label floating>Date and Time</ion-label>\n      <ion-datetime displayFormat="MMM DD, YYYY hh:mm a" min="2016" max="2025-10-31" [(ngModel)]="myDate"></ion-datetime>\n    </ion-item>\n\n    <button ion-button full>Confirm</button>\n\n    <button ion-button full color="danger" (click)="openMyEventsPage()">Cancel</button>\n\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Lemuel Dizon\Documents\GitHub\kidsplay\src\pages\add-event\add-event.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+], AddEventPage);
+
+var _a, _b;
+//# sourceMappingURL=add-event.js.map
 
 /***/ }),
 

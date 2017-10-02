@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AddEventPage } from '../add-event/add-event';
+import { MyEventsPage } from '../my-events/my-events'
 
 /**
- * Generated class for the MyEventsPage page.
+ * Generated class for the AddEventPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage()
-
 @Component({
-  selector: 'page-my-events',
-  templateUrl: 'my-events.html',
+  selector: 'page-add-event',
+  templateUrl: 'add-event.html',
 })
-export class MyEventsPage {
+export class AddEventPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MyEventsPage');
+    console.log('ionViewDidLoad AddEventPage');
   }
 
-  openAddEventPage() {
-    this.navCtrl.push(AddEventPage);
+  openMyEventsPage() {
+    this.navCtrl.setRoot(MyEventsPage, {}, {animate: true, direction: 'forward'});
   }
 
 }
