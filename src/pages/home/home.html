@@ -7,6 +7,29 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Home Page (edwin)</h3>
+<ion-content padding class="background">
+  <ion-card>
+    <ion-card-header>
+      KidsPlay!
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item (click)="openHomePage()">
+        <ion-icon name="cart"  item-start></ion-icon> 
+        Make Event
+      </button>
+
+      <button ion-item>
+        <ion-icon name="medical" item-start></ion-icon>
+        NewsFeed
+      </button>
+
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Account
+      </button>
+
+
+    </ion-list>
+  </ion-card>
 </ion-content>
